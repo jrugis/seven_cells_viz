@@ -1,17 +1,12 @@
 ********************************************
-********************************************
-ffmpeg -i vis00_stack/vis.%04d.tif -c:v libx264 -preset veryslow -crf 17 vis00.avi
-ffmpeg -i vis01_stack/vis.%04d.tif -c:v libx264 -preset veryslow -crf 17 vis01.avi
-ffmpeg -i vis01.avi -pix_fmt yuv420p vis01.mp4
+Paraview: camera orbit 
 
-ffmpeg -i vis01_stack/vis.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis01.mp4
-ffmpeg -i vis01a_stack/vis.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis01a.mp4
+C	-4		20		0
+N	0		0		1
+O	-60		0		0
 
-ffmpeg -i vis02_stack/vis02.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis02.mp4
-ffmpeg -i vis02a_stack/vis.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis02a.mp4
-
-********************************************
-Paraview vis10.pvsm for CMPB2017
+1128 x 954 (note: must be even for ffmpeg)
+ffmpeg -i vis_stack_00/c.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis00.mp4
 
 ********************************************
 ********************************************

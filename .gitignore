@@ -1,4 +1,5 @@
 *.mat
 *.bin
 *.vtu
+vis_stack*/
 
