@@ -1,5 +1,6 @@
 *.mat
 *.bin
 *.vtu
+*.mp4
 vis_stack*/
 

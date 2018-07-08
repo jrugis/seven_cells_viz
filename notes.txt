@@ -1,6 +1,28 @@
 ********************************************
-Paraview: camera orbit 
+********************************************
+New videos:
+vis00.mp4 - all seven cells
+vis01.mp4 - cell 1
 
+In folder at this link:
+https://www.dropbox.com/sh/9fusqaxpp8im6vc/AAB68yA2k96evUn0UcOZ2pBva?dl=0
+
+Using data from Nathan.
+Data file: Ca_1_7.mat 5/7/18
+Time steps: 2900
+Time per step: 0.1s
+Total time: 290s
+
+Video frame rate: 25f/s
+Video length: 1m56s
+Video speed: 2.5 times real-time
+
+********************************************
+all seven cells
+---------------
+
+Paraview: seven_cells_vis_03.pvsm
+camera orbit 
 C	-4		20		0
 N	0		0		1
 O	-60		0		0
@@ -9,5 +31,17 @@ O	-60		0		0
 ffmpeg -i vis_stack_00/c.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis00.mp4
 
 ********************************************
+single cell
+-----------
+
+Paraview: seven_cells_vis_04.pvsm
+camera orbit 
+C	-2		13		-7
+N	0		0		1
+O	30		0		0
+
+1128 x 954 (note: must be even for ffmpeg)
+ffmpeg -i vis_stack_01/c.%04d.tif -c:v libx264 -preset veryslow -crf 17 -pix_fmt yuv420p vis01.mp4
+
 ********************************************
 
